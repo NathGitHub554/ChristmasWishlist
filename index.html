@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="description" content="This is the site where I post my Christmas list every year. (And my birthday list, etc.)">
+   <title>Nathanael's Christmas Wishlist</title>
+   <link rel="stylesheet" type="text/css" href="ChristmasCSS.css">
+   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+   <style type="text/css"> 
+	   table {border-collapse: collapse;
+	          margin-right: auto;
+			  margin-left: auto;
+			  margin-top: 50px;
+			  margin-bottom: 50px;
+			  width: 90%;
+	          }
+			  
+	    th, td {border: 5px solid black;
+		        padding: 20px;
+				font-family: Arial, "sans-serif";
+				font-size: 1.3em;
+				font-weight: bold;
+				background-color: white;}
+				
+	    th {color: red;
+		    font-family: "Times New Roman", serif;
+			font-size: 2em;
+			font-weight: bold;
+			text-shadow: 2px 1px black;
+			background-color: forestgreen;}
+				
+	    th.sub {background-color: lightcyan;}
+				
+		td > a:link {outline: 0px;
+		             color: black;
+					 font-family: Arial, "sans-serif";
+					 font-size: 1.2em;
+					 color: green;}
+					 
+		td > a:visited {color: green;}
+		
+		td.cost {text-align: right;}
+		
+		@media screen and (max-width:  1120px) {
+		    header {display: flex;
+			        flex-direction: column;
+			        justify-content: center;
+					}
+					
+			nav {padding-bottom: 20px;}
+		    }
+			
+		@media screen and (max-width: 760px) {
+		
+		    header {text-align: center;
+			        font-size: 0.8em;}
+					}
+   </style>
+</head>
+
+<body>
+<!--this is a comment for mark-up-->
+   <header>
+        <h1>Nathanael's Christmas Wishlist</h1>
+		
+		<nav>
+		    <a class="nav" href="ChristmasWishlist.html">Home</a> <a class="nav" href="About.html">Stuff I Like</a>
+		</nav>
+   </header>
+
+   <main>
+      <article>
+	      <table>
+		      <tr>
+		          <th colspan="2">My Christmas List:</th>
+			  </tr>
+			  
+			  <tr>
+		          <th id="item" class="sub">Item:</th>
+				  <th id="cost" class="sub">Cost:</th>
+			  </tr>
+			  
+			  <tr>
+		          <td><a href="https://www.barnesandnoble.com/w/jrr-tolkien-4-book-boxed-set-j-r-r-tolkien/1137493637?ean=9780345538376" target="_blank">The Lord of the Rings Series Box Set</a></td>
+				  <td class="cost">$35.96</td>
+			  </tr>
+			  
+			  <tr>
+		          <td><a href="https://www.costco.com/32-degrees-mens-heat-pant-2-pack.product.100508321.html" target="_blank">32 Degree Heat Long Johns</td>
+				  <td class="cost">$15.99</td>
+			  </tr>
+			  
+			  <tr>
+		          <td>Money Towards Ski Goggles</td>
+				  <td class="cost">However much you would like to contribute</td>
+			  </tr>
+		  </table>
+      </article>
+   </main>	  
+   <footer>
+       <h3 class="contact">Contact Me:</h3>
+       <p class="contact">Email: <a title="Email Me" href="mailto:npbayne@gmail.com">npbayne@gmail.com</a>  |  <a title="Text Me" href="tel:810-499-0648">Phone: 810-499-0648</a></p>
+       <p id="copyright">Copyright &copy;&nbsp;2024 Big Nose Websites <img id="nose" src="assets/Nose.png" alt="big nose"></p>
+   </footer>
+</body>
+</html>
