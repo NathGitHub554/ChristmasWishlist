@@ -3,16 +3,17 @@
 <head>
    <meta charset="utf-8">
    <meta name="description" content="This is the site where I post my Christmas list every year. (And my birthday list, etc.)">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>Nathanael's Christmas Wishlist</title>
    <link rel="stylesheet" type="text/css" href="ChristmasCSS.css">
-   <link rel="icon" type="image/x-icon" href="/assets/Favicon.ico">
+   <link rel="icon" type="image/x-icon" href="assets/Favicon.ico">
    <style type="text/css"> 
 	   table {border-collapse: collapse;
 	          margin-right: auto;
 			  margin-left: auto;
 			  margin-top: 50px;
 			  margin-bottom: 50px;
-			  width: 90%;
+			  width: 80%;
 	          }
 			  
 	    th, td {border: 5px solid black;
@@ -24,10 +25,12 @@
 				
 	    th {color: red;
 		    font-family: "Times New Roman", serif;
-			font-size: 2em;
 			font-weight: bold;
+			font-size: 2em;
 			text-shadow: 2px 1px black;
 			background-color: forestgreen;}
+			
+	    td:nth-child(odd) {color: forestgreen;}
 				
 	    th.sub {background-color: lightcyan;}
 				
@@ -39,7 +42,8 @@
 					 
 		td > a:visited {color: green;}
 		
-		td.cost {text-align: right;}
+		td.cost {text-align: right;
+		         font-size: 1.7em;}
 		
 		@media screen and (max-width:  1120px) {
 		    header {display: flex;
@@ -58,7 +62,18 @@
 					
 		@media screen and (max-width: 770px) {
 		
-		    th {}
+		    table, tr, th, td {display: block;
+			                   margin-right: auto;
+							   margin-left: auto;
+							   border-bottom: none;
+			                   }
+							   
+			tr:nth-child(5) {border-bottom: 5px solid black;}
+							   
+			tr:nth-child(2) {display: none;}
+			
+			td.cost {text-align: right;}
+			
 			}
    </style>
 </head>
@@ -97,7 +112,7 @@
 			  
 			  <tr>
 		          <td>Money Towards Ski Goggles</td>
-				  <td class="cost">However much you would like to contribute</td>
+				  <td class="cost">$25.00</td>
 			  </tr>
 		  </table>
       </article>
